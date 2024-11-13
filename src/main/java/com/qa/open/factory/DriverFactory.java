@@ -12,9 +12,15 @@ public class DriverFactory {
 	
 	public WebDriver driver;
 	
-	public void setup(String browserName) {
+	/**
+	 * this is use inialize the webdriver 
+	 * @param browserName
+	 * @return this will return the driver 
+	 */
+	
+	public WebDriver init_driver(String browserName) {
 		System.out.println("the broser name is :"+ browserName);
-		if (browserName.equals("Chrome")) {
+		if (browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver= new ChromeDriver();
 		}
@@ -30,9 +36,11 @@ public class DriverFactory {
 		else {
 			System.out.println("please pass the right browser :"+browserName);
 		}
-		driver.manage().window().fullscreen();
+		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("https://demo.opencart.com/en-gb?route=account/login");
+		
+		return driver;
 		
 	}
 
