@@ -30,7 +30,9 @@ public class DriverFactory {
 		else {
 			System.out.println("please pass the right browser :"+browserName);
 		}
-		
+		driver.manage().window().fullscreen();
+		driver.manage().deleteAllCookies();
+		driver.get("https://demo.opencart.com/en-gb?route=account/login");
 		
 	}
 
