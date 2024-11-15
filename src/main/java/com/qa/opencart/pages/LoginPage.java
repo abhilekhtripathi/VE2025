@@ -3,14 +3,19 @@ package com.qa.opencart.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.qa.opencart.utils.Constants;
+import com.qa.opencart.utils.ElementUtil;
+
 public class LoginPage {
 	// declare private driver
 	private WebDriver driver;
+	private ElementUtil eleUtil;
 
 	// 2 create a page constructor
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
+		eleUtil  = new ElementUtil(driver);
 	}
 
 	// 3 By Locators
@@ -24,26 +29,26 @@ public class LoginPage {
 	// page actions
 
 	public String getLoginPageTitle() {
-		return driver.getTitle();
+		return eleUtil.doGetTitle(Constants.LOGIN_PAGE_TITLE, Constants.DEFAULT_TIME_OUT);
 	}
 	
-	public String getLoginPageURL() {
-		return driver.getCurrentUrl();
+	public boolean getLoginPageURL() {
+		return eleUtil.waitForURLToContain(Constants.LOGIN_PAGE_URL_FRACTION,Constants.DEFAULT_TIME_OUT);
 	}
 	
 	public boolean isforgotPwdLinkExist() {
-		return driver.findElement(forgotPwdLink).isDisplayed();
+		return eleUtil.doIsDisplayed(forgotPwdLink);
 	}
 	
 	public boolean isRegisterLinkExist() {
-		return driver.findElement(registerLink).isDisplayed();
+		return eleUtil.doIsDisplayed(registerLink);
 	}
 	
 	public void doLogin(String un, String pwd) {
 		System.out.println("login with :" + un + " :" + pwd);
-		driver.findElement(emailID).sendKeys(un);
-		driver.findElement(password).sendKeys(pwd);
-		driver.findElement(loginBtn).click();
+		eleUtil.doSendKeys(emailID, un);
+		eleUtil.doSendKeys(password, pwd);
+		eleUtil.doClick(loginBtn);
 		
 		
 	}
