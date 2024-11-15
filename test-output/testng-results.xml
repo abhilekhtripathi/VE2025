@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-14T18:00:44 IST" name="Default suite" finished-at="2024-11-14T18:00:49 IST" duration-ms="4735">
+  <suite started-at="2024-11-15T11:39:10 IST" name="Default suite" finished-at="2024-11-15T11:39:15 IST" duration-ms="4900">
     <groups>
     </groups>
-    <test started-at="2024-11-14T18:00:44 IST" name="Default test" finished-at="2024-11-14T18:00:49 IST" duration-ms="4735">
+    <test started-at="2024-11-15T11:39:10 IST" name="Default test" finished-at="2024-11-15T11:39:15 IST" duration-ms="4900">
       <class name="com.qa.opencart.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-14T18:00:44 IST" name="setUp" finished-at="2024-11-14T18:00:48 IST" duration-ms="4031" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-15T11:39:10 IST" name="setUp" finished-at="2024-11-15T11:39:14 IST" duration-ms="4282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-14T18:00:48 IST" name="loginPageTitleTest" finished-at="2024-11-14T18:00:48 IST" duration-ms="61" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-15T11:39:14 IST" name="loginPageTitleTest" finished-at="2024-11-15T11:39:14 IST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="loginPageUrlTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-14T18:00:48 IST" name="loginPageUrlTest" finished-at="2024-11-14T18:00:48 IST" duration-ms="10" status="PASS">
+        <test-method signature="loginPageUrlTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-15T11:39:14 IST" name="loginPageUrlTest" finished-at="2024-11-15T11:39:14 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageUrlTest -->
-        <test-method signature="forgotPwdLinkTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-14T18:00:48 IST" name="forgotPwdLinkTest" finished-at="2024-11-14T18:00:48 IST" duration-ms="41" status="PASS">
+        <test-method signature="forgotPwdLinkTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-15T11:39:14 IST" name="forgotPwdLinkTest" finished-at="2024-11-15T11:39:14 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPwdLinkTest -->
-        <test-method signature="regirsterLinkTest()[pri:4, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-14T18:00:48 IST" name="regirsterLinkTest" finished-at="2024-11-14T18:00:48 IST" duration-ms="34" status="PASS">
+        <test-method signature="regirsterLinkTest()[pri:4, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-15T11:39:14 IST" name="regirsterLinkTest" finished-at="2024-11-15T11:39:14 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- regirsterLinkTest -->
-        <test-method signature="loginTest()[pri:5, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-14T18:00:48 IST" name="loginTest" finished-at="2024-11-14T18:00:49 IST" duration-ms="316" status="PASS">
+        <test-method signature="loginTest()[pri:5, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-15T11:39:14 IST" name="loginTest" finished-at="2024-11-15T11:39:15 IST" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-14T18:00:49 IST" name="tearDown" finished-at="2024-11-14T18:00:49 IST" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@548a24a]" started-at="2024-11-15T11:39:15 IST" name="tearDown" finished-at="2024-11-15T11:39:15 IST" duration-ms="133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
