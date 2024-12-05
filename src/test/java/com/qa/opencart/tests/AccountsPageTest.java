@@ -44,7 +44,11 @@ public class AccountsPageTest extends BaseTest {
 	@DataProvider
 
 	public Object[][] productData() {
-		return new Object[][] { { "MackBook Pro" }, { "Apple" }, { "Samsung" } };
+		return new Object[][] { 
+			{ "MackBook Pro" }, 
+			{ "Apple" },
+			{ "Samsung" } 
+			};
 
 	}
 
@@ -53,5 +57,37 @@ public class AccountsPageTest extends BaseTest {
 		searchResultPage = accountsPage.doSearch(productName);
 		Assert.assertTrue(searchResultPage.getProductListCount() > 0);
 	}
+	
+	
+	
+	@DataProvider
+
+	public Object[][] productSelectData() {
+		return new Object[][] { 
+			{ "MackBook Pro" , "Mackbook Pro" }, 
+			{ "iMac", "iMac" },
+			{ "Samsung" ,"Samsung Sync Master 941BW" } ,
+			{ "Apple" ,"Apple Cinema 30" }
+			};
+	
+	
+	}
+	
+	
+	@Test(priority = 6)
+	   
+	public void selectProductTest(String productName , String mainProductName) {
+		searchResultPage = accountsPage.doSearch(productName);
+		productInfoPage =searchResultPage.selectProduct(mainProductName);
+		Assert.assertEquals(productInfoPage.getProductHeader(), mainProductName);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

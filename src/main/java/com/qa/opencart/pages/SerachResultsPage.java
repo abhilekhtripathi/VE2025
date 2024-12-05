@@ -34,7 +34,7 @@ public class SerachResultsPage {
     	  List<WebElement> searchList = eleUtil.waitForElementsToBeVisible(productResults, 10, 2000);
     	  for (WebElement e : searchList) {
 			          String text = e.getText();
-			          if (e.equals(mainProductName)) {
+			          if (text.equals(mainProductName)) {
 						e.click();
 						break;
 					}

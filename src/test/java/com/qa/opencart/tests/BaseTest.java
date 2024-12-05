@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 import com.qa.open.factory.DriverFactory;
 import com.qa.opencart.pages.AccountsPage;
 import com.qa.opencart.pages.LoginPage;
+import com.qa.opencart.pages.ProductInfoPage;
 import com.qa.opencart.pages.SerachResultsPage;
 
 public class BaseTest {
@@ -19,6 +20,7 @@ public class BaseTest {
 	LoginPage loginPage;
 	AccountsPage accountsPage;
 	SerachResultsPage searchResultPage;
+	ProductInfoPage  productInfoPage;
 
 	@BeforeTest
 	public void setUp() {
